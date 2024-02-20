@@ -10,24 +10,21 @@
 
     <script>
 
-              let n1 = parseFloat(prompt('DIGITE A NOTA 1'));
-              let n2 = parseFloat(prompt('DIGITE A NOTA 2'));
+           let n1 = parseFloat(prompt('Digite a nota 1'));
+           let n2 = parseFloat(prompt('Digite a nota 2'));
 
-              if(isNaN(n1) || isNaN(n2)){
-                alert('DIGITE APENAS NÚMEROS')
-              } else if(n1 < 0 || n2 < 0 || n1 > 10 || n2 > 10){
-                alert('DIGITE AOENAS NÚMEROS ENTRE 0 E 10')
-              } else {
-                let media = (n1 + n2) /2
-                if(media > 4 && n1 > 0 && n2 > 0){
-                    alert('APROVADO!')
-                } else {
-                    alert('REPROVADO')
-                }
-              }
-
-              alert('FIM DO PROGRAMA')
-
+           if(isNaN(n1) || isNaN(n2)){
+            alert('Digite apenas números');
+           } else if(n1 < 0 || n2 < 0 || n1 > 10 || n2 > 10){
+            alert('Digite apenas números entre 0 e 10');
+           } else {
+            let media = (n1 + n2) /2;
+            if(media > 4 && n1 > 0 && n2 > 0){
+              alert('APROVADO');
+            } else {
+              alert('REPROVADO');
+            }
+           }
    </script>
 </body>
 </html>
