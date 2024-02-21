@@ -9,24 +9,25 @@
     <h1>Exercicio de Condicionais Switch</h1>
 
        <script>
+           
+           let myVar = null
 
-        let myVar = 10
-
-        switch(typeof myVar) {
-            case "number":
+           switch(typeof myVar){
+            case "number": 
                 alert('myVar é número')
                 break
-            case "string":
+            case "string": 
                 alert('myVar é texto')
                 break
             case "boolean":
                 alert('myVar é boleana')
                 break
-            case "undefined": 
-                alert('myVar é indefinido')
+            case "undefined":
+                alert('myVar é indefinida')
+                break
             default:
-                alert('nenhum tipo conhecido')     
-        }
+                alert('Nenhum tipo encontrado')
+           }
             
       </script>
 </body>
