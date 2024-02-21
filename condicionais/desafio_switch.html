@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    <h1>Exercicio de Condicionais Switch</h1>
+
+       <script>
+
+        let myVar = 10
+
+        switch(typeof myVar) {
+            case "number":
+                alert('myVar é número')
+                break
+            case "string":
+                alert('myVar é texto')
+                break
+            case "boolean":
+                alert('myVar é boleana')
+                break
+            case "undefined": 
+                alert('myVar é indefinido')
+            default:
+                alert('nenhum tipo conhecido')     
+        }
+            
+      </script>
+</body>
+</html>
