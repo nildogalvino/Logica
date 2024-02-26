@@ -11,6 +11,28 @@
 
     <script>
         
+        let dadosJogados = 0;
+        let dadosPares = 0;
+        
+        while(true){
+            let dado1 = parseInt(Math.random() * 6) + 1;
+            let dado2 = parseInt(Math.random() * 6) + 1;
+
+            console.log(dado1, dado2, dadosJogados, dadosPares);
+            dadosJogados++;
+
+            if(( dado1 + dado2 ) % 2 === 0){
+                dadosPares++;
+            }
+
+            if(dadosPares >= 10){
+                break;
+            }
+            
+        }
+        console.log(`Os dados foram jogados ${dadosJogados} vezes`);
+
+
     </script>
 </body>
 </html>
