@@ -24,7 +24,31 @@
             }
             console.log(i);
         }
-        console.log('fim do programa com contine');
+        console.log('fim do programa com contine'); 
+
+        console.log('----------- loop com while -----------');
+
+        let j = 1;
+        while(j < 10){
+            console.log(j);
+            if(j === 5){
+                break
+            }
+            j++;
+        }
+        console.log('fim do loop com while com break');
+
+
+        j = 1;
+        while(j < 10){
+            if(j === 5){
+                j++
+                continue;
+            }
+            console.log(j);
+            j++
+        }
+        console.log('fim do loop com while com continue');
     </script>
 </body>
 </html>
