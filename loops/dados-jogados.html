@@ -15,23 +15,21 @@
         let dadosPares = 0;
         
         while(true){
-            let dado1 = parseInt(Math.random() * 6) + 1;
-            let dado2 = parseInt(Math.random() * 6) + 1;
+          let dados1 = parseInt(Math.random() * 6 + 1);
+          let dados2 = parseInt(Math.random() * 6  + 1);
+          console.log(dados1, dados2, dadosJogados, dadosPares);
+          dadosJogados++;
 
-            console.log(dado1, dado2, dadosJogados, dadosPares);
-            dadosJogados++;
+          if((dados1 + dados2) % 2 === 0){
+            dadosPares++;
+          }
 
-            if(( dado1 + dado2 ) % 2 === 0){
-                dadosPares++;
-            }
+          if(dadosPares >= 10){
+            break;
+          }
+      }
 
-            if(dadosPares >= 10){
-                break;
-            }
-            
-        }
-        console.log(`Os dados foram jogados ${dadosJogados} vezes`);
-
+      console.log('Os dados foram jogados ' + dadosJogados + ' vezes');
 
     </script>
 </body>
