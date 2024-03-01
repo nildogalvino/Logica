@@ -10,10 +10,19 @@
 
 
     <script>
+
+      
       let nomes = ['Maria', 'José', 'Pedro', 'João', 'Mateus', 'Marcos']
+      let nomeDigitado = prompt('Digite o seu nome');
+
+      nomes[nomes.length] = nomeDigitado;
+      
       for(let i = 0; i < nomes.length; i++){
         document.write('Esses nomes são biblicos: ' + nomes[i] + '<br>');
       }
+
+      document.write('A lista de nomes possui ' + nomes.length + ' elementos ' + '<br>');
+
     </script>
 </body>
 </html>
