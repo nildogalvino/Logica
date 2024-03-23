@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
-    <script defer src="introducao01.js"></script>
 </head>
 <body>
     <h1 id="titulo">Um titulo qualquer</h1>
@@ -14,5 +13,23 @@
     
     <input type="text" id="user" value="valor preenchido">
     
-</body>
+    <hr>
+    <h2>Lista de tarefas</h2>
+    
+    <ol id="listaTarefas">
+        <li>Aprender CSS</li>
+        <li>Aprender Javascript</li>
+        <li>Aprender DOM profundamente</li>
+        <li>Criar algo</li>
+    </ol>
+            
+        <script>
+
+         document.getElementById('titulo').textContent = 'Titulo alterado';
+
+         const lista = document.getElementById('listaTarefas');
+         let novaTarefa = 'Aplicar para Vagas';
+         lista.innerHTML += lista.innerHTML = '<li>Criar Portfólio</li>';
+        </script>
+        </body>
 </html>
