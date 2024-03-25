@@ -3,61 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de Produtos</title>
+    <title>Product Table</title>
 
     <style>
         table{
             border-collapse: collapse;
         }
-        table,
-        th,
+        table, 
+        th, 
         td{
             border: 1px solid black;
         }
         th, td{
             padding: 10px;
         }
-        th + th, td + td{
+        td + td{
             text-align: right;
         }
     </style>
 </head>
 <body>
-    <h1>Tabela de produtos</h1>
-
-
+    <h1>Product table</h1>
     <table>
         <thead>
             <tr>
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>Quantidade em estoque</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity in stock</th>
             </tr>
         </thead>
-
-        <tbody id="tabelaProdutos">
-            
+        <tbody id="productTable">
+            <!-- <tr>
+                <td>Pen</td>
+                <td>R$ 2.00</td>
+                <td>3</td>
+            </tr> -->
         </tbody>
     </table>
-
     <script>
-        const produtos = [
-            {nome: 'Caneta', preco: 2, estoque: 3},
-            {nome: 'Lapis', preco: 1.5, estoque: 4},
-            {nome: 'Borracha', preco: 0.75, estoque: 0},
-            {nome: 'Caderno', preco: 2.3, estoque: 1},
-            {nome: 'Régua', preco: 4, estoque: 5}
+        const product = [
+            {name: 'Pen', price: 2, stock: 3},
+            {name: 'Pencil', price: 1.5, stock: 4},
+            {name: 'Rubber', price: 0.75, stock: 0},
+            {name: 'Journal', price: 2.3, stock: 1},
+            {name: 'Ruler', price: 4, stock: 5}
         ];
-
-        const tabelaProdutos = document.getElementById('tabelaProdutos');
-
-        for(let i = 0; i < produtos.length; i++){
-            tabelaProdutos.innerHTML += ` <tr>
-                <td>${produtos[i].nome}</td>
-                <td>R$ ${produtos[i].preco.toFixed(2)}</td>
-                <td>${produtos[i].estoque}</td>
+        const productTable = document.getElementById('productTable');
+        for(let i = 0; i < product.length; i++){
+            productTable.innerHTML += ` <tr>
+                <td>${product[i].name}</td>
+                <td>R$ ${product[i].price.toFixed(2)}</td>
+                <td>${product[i].stock}</td>
             </tr>`
         }
     </script>
-</body>
 </html>
