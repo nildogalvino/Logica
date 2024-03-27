@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+
+    <h1>Funções</h1>
+     <input type="number" id="number" value="1">
+     <button onclick="mostrarTabela()">Clique aqui</button>
+     <button onclick="limparTabuada()">Limpar tabuada</button>
+     <div id="output"></div>
+
+     <script>
+        const input = document.getElementById('number');
+        const output = document.getElementById('output');
+
+        let tabelaHTML = '';
+
+        function mostrarTabela(){
+            const inputValue = parseFloat(input.value);
+
+            limparTabuada();
+
+            for(let i = 1; i <= 10; i++){
+                tabelaHTML += `${i} x ${inputValue} = ${i * inputValue} <br>`
+            }
+
+            output.innerHTML = tabelaHTML;
+        };
+
+        function limparTabuada(){
+            tabelaHTML = '';
+            output.innerHTML = '';
+        }
+
+        mostrarTabela();
+     </script>
+
+</body>
+</html>
