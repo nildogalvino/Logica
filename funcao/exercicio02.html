@@ -8,36 +8,41 @@
 <body>
 
     <h1>Funções</h1>
-     <input type="number" id="number" value="1">
-     <button onclick="mostrarTabela()">Clique aqui</button>
-     <button onclick="limparTabuada()">Limpar tabuada</button>
-     <div id="output"></div>
 
-     <script>
+    <input type="number" id="number" value="1">
+    <button onclick="mostrarTabuada()">Clique aqui</button>
+    <button onclick="limparTabuada()">Limpar tabuada</button>
+    <div id="output"></div>
+
+    <script>
+
         const input = document.getElementById('number');
         const output = document.getElementById('output');
 
-        let tabelaHTML = '';
+        let tabuadaHTML = '';
 
-        function mostrarTabela(){
+        function mostrarTabuada(){
             const inputValue = parseFloat(input.value);
 
             limparTabuada();
 
             for(let i = 1; i <= 10; i++){
-                tabelaHTML += `${i} x ${inputValue} = ${i * inputValue} <br>`
+                tabuadaHTML += `${i} x ${inputValue} = ${i * inputValue} <br>`;
             }
 
-            output.innerHTML = tabelaHTML;
-        };
+            output.innerHTML = tabuadaHTML;
+        }
 
         function limparTabuada(){
-            tabelaHTML = '';
+            tabuadaHTML = '';
             output.innerHTML = '';
         }
 
-        mostrarTabela();
-     </script>
+        mostrarTabuada();
+
+    </script>
+
+    
 
 </body>
 </html>
