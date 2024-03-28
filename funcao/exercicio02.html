@@ -9,13 +9,12 @@
 
     <h1>Funções</h1>
 
-    <input type="number" id="number" value="1">
-    <button onclick="mostrarTabuada()">Clique aqui</button>
-    <button onclick="limparTabuada()">Limpar tabuada</button>
-    <div id="output"></div>
+     <input type="number" id="number" value="1">
+     <button onclick="mostrarTabuada()">Clique aqui</button>
+     <button onclick="limparTabuada()">Limpar tabuada</button>
+     <div id="output"></div>
 
-    <script>
-
+     <script>
         const input = document.getElementById('number');
         const output = document.getElementById('output');
 
@@ -27,7 +26,7 @@
             limparTabuada();
 
             for(let i = 1; i <= 10; i++){
-                tabuadaHTML += `${i} x ${inputValue} = ${i * inputValue} <br>`;
+                tabuadaHTML += `${i} x ${inputValue} = ${i * inputValue} <br>`
             }
 
             output.innerHTML = tabuadaHTML;
@@ -39,10 +38,7 @@
         }
 
         mostrarTabuada();
-
-    </script>
-
-    
+     </script>
 
 </body>
 </html>
